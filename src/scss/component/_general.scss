@@ -71,10 +71,6 @@ main {
         align-items: center;
         cursor: pointer;
 
-        &:hover {
-            color: $soft-red;
-        }
-
         h3 {
             font-weight: normal;
         }
@@ -157,6 +153,10 @@ main {
 
         .title {
             text-align: left;
+        }
+
+        .question:hover {
+            color: $soft-red;
         }
     }
 }

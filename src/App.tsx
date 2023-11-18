@@ -115,7 +115,9 @@ function QuestionAnswerItem({
   return (
     <>
       <div className="question">
-        <h3>{question}</h3>
+        <h3 style={{ fontWeight: openAccordion ? "bolder" : "initial" }}>
+          {question}
+        </h3>
 
         <svg
           className={`arrow${openAccordion ? "--active" : ""}`}
