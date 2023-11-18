@@ -1,0 +1,35 @@
+@use './normalise';
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+* {
+    @extend %reset-placeholder;
+
+    &::before {
+        @extend %reset-placeholder;
+    }
+
+    &::after {
+        @extend %reset-placeholder;
+    }
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: clamp(1rem, 0.9091rem + 0.4545vw, 1.2rem);
+    color: $dark-grayish-blue;
+    background: linear-gradient(to bottom, $soft-violet, $soft-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 2rem;
+    box-sizing: border-box;
+}
