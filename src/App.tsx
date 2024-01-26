@@ -42,7 +42,7 @@ function App() {
 
   return (
     <div className="container">
-      <section className="hero">
+      <header className="hero">
         <div className="hero_illustration">
           <picture>
             <source
@@ -73,7 +73,7 @@ function App() {
           src="images/illustration-box-desktop.svg"
           alt="box illustration"
         />
-      </section>
+      </header>
 
       <QAList
         questions={qaList}
